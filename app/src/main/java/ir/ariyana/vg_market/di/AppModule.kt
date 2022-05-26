@@ -2,7 +2,9 @@ package ir.ariyana.vg_market.di
 
 import ir.ariyana.vg_market.repository.MainRepository
 import ir.ariyana.vg_market.repository.remote.ServiceAPI
+import ir.ariyana.vg_market.ui.main.MainViewModel
 import ir.ariyana.vg_market.utils.Constants
+import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -20,5 +22,9 @@ val appModule = module {
 
     factory {
         MainRepository(get())
+    }
+
+    viewModel {
+        MainViewModel(get())
     }
 }
