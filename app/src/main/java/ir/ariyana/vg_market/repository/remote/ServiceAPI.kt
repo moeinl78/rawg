@@ -19,7 +19,7 @@ interface ServiceAPI {
 
     @GET("games/{game_pk}/game-series")
     suspend fun getVideoGameRelated(
-        @Path("game_pk") gamePk : String,
+        @Path("game_pk") gamePk : Int,
         @Query("key") key: String = Constants.API_KEY
     ): Response<VideoGameRelated>
 
