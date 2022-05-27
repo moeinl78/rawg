@@ -7,7 +7,6 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import ir.ariyana.vg_market.model.VideoGameList
 import ir.ariyana.vg_market.repository.MainRepository
-import ir.ariyana.vg_market.utils.Constants
 import ir.ariyana.vg_market.utils.Resource
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -30,7 +29,9 @@ class MainViewModel(
                 if (res.isSuccessful) {
                     _gameList.postValue(Resource.Success(res.body()!!))
                 }
-                _gameList.postValue(Resource.Error(res.message()))
+                else {
+                    _gameList.postValue(Resource.Error(res.message()))
+                }
             }
             catch (e: Exception) {
                 Timber.e(e.message!!)

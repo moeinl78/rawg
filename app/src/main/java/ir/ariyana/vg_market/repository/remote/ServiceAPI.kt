@@ -12,7 +12,7 @@ import retrofit2.http.Query
 
 interface ServiceAPI {
 
-    @GET("games/")
+    @GET("games")
     suspend fun getVideoGameList(
         @Query("key") key: String = Constants.API_KEY
     ): Response<VideoGameList>
