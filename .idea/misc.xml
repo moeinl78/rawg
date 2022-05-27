@@ -4,6 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/moein/AndroidStudioProjects/vgmarket/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/moein/AndroidStudioProjects/vgmarket/app/src/main/res/layout/fragment_genres.xml" value="0.2064102564102564" />
+        <entry key="..\:/Users/moein/AndroidStudioProjects/vgmarket/app/src/main/res/layout/fragment_home.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/moein/AndroidStudioProjects/vgmarket/app/src/main/res/layout/fragment_profile.xml" value="0.20726495726495728" />
+        <entry key="..\:/Users/moein/AndroidStudioProjects/vgmarket/app/src/main/res/menu/botttom_navigation_menu.xml" value="0.2526041666666667" />
       </map>
     </option>
   </component>
