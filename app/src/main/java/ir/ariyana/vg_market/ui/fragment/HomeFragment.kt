@@ -42,7 +42,7 @@ class HomeFragment: Fragment() {
                     is Resource.Success -> {
                         adapter = AdapterRecycler(res.data?.results as ArrayList<VideoGameList.Result>)
                         binding.fragmentHomeRecyclerView.adapter = adapter
-                        binding.fragmentHomeRecyclerView.layoutManager = LinearLayoutManager(binding.root.context, RecyclerView.HORIZONTAL, false)
+                        binding.fragmentHomeRecyclerView.layoutManager = LinearLayoutManager(binding.root.context, RecyclerView.VERTICAL, false)
                     }
 
                     is Resource.Error -> {
