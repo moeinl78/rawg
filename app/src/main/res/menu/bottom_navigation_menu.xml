@@ -4,19 +4,19 @@
     >
 
     <item
-        android:id=""
+        android:id="@+id/homeFragment"
         android:title="@string/home"
         android:icon="@drawable/ic_baseline_home_24"
         />
 
     <item
-        android:id=""
+        android:id="@+id/genreFragment"
         android:title="@string/genres"
         android:icon="@drawable/ic_baseline_view_list_24"
         />
 
     <item
-        android:id=""
+        android:id="@+id/profileFragment"
         android:title="@string/profile"
         android:icon="@drawable/ic_baseline_manage_accounts_24"
         />

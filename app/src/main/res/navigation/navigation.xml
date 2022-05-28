@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/navigation">
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
 
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="ir.ariyana.vg_market.ui.fragment.HomeFragment"
+        android:label="HomeFragment" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="ir.ariyana.vg_market.ui.fragment.ProfileFragment"
+        android:label="ProfileFragment" />
+    <fragment
+        android:id="@+id/genreFragment"
+        android:name="ir.ariyana.vg_market.ui.fragment.GenreFragment"
+        android:label="GenreFragment" />
 </navigation>
